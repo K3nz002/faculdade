@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<script type = "text/javascript">
+
+    var valor_bruto = parseFloat(prompt("Digite o seu salário bruto: "));
+
+    document.write("<h1>Cálculo de salário</h1>");
+
+    if (valor_bruto < 1000){
+        document.write(`O valor do salário ${valor_bruto} convertido será ${valor_bruto}`);
+    }
+
+    else if (x <= 2200){
+        imposto = (valor_bruto * (0.87))
+        document.write(`O valor do salário ${valor_bruto} convertido será ${imposto}`);
+    }
+
+    else{
+        imposto = (valor_bruto * (0.78))
+        document.write(`O valor do salário ${valor_bruto} convertido será ${imposto}`);
+    }
+
+</script>
+</html>
