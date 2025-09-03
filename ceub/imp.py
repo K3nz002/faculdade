@@ -1,0 +1,6 @@
+print("dasdasd")
+print("dasdasd")
+print("dasdasd")
+print("dasdasd")
+print("dasdasd")
+print("dasdasd")

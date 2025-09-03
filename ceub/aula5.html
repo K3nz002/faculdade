@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Positivo e Par</title>
+</head>
+<body>
+    <h1>Teste de Positivo e Par</h1>
+    <hr>
+    Número: <input Type = 'number' id = 'num'>
+    <button onclick = 'processar()'>Verificar</button>
+</body>
+</html>
+
+<script>
+    function processar(){
+        valor = parseInt(document.getElementById('num').value);
+        if (valor == 0){
+            alert('valor é nulo');
+        }else if(valor % 2 == 0 && valor > 0){
+            alert('O valor é par e positivo');
+        }else if (valor % 2 != 0 && valor < 0){
+            alert('O valor é ímpar e negativo');
+        }else if(valor % 2 != 0 && valor > 0){
+            alert('O valor é ímpar e positivo');
+        }else{
+            alert('O valor é par e negativo');
+        }
+    }
+</script>
