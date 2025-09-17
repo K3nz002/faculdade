@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Aula 2</title>
+</head>
+<script type = "text/javascript">
+    let cor = parseInt(prompt(
+        "Digite o n° da cor da etiqueta:\n--ETIQUETAS--\n1. Azul\n2. Verde\n3. Amarelo\n4. Vermelho\n5. Laranja"
+    ))
+
+    let valor = parseFloat(prompt(
+        "Digite o valor do produto: "
+    ))
+
+    switch (cor){
+        case 1:
+            alert(`O valor do produto com o desconto é igual a ${(valor * 0.90).toFixed(2)}`);
+            break;
+        case 2:
+            alert(`O valor do produto com o desconto é igual a ${(valor * 0.80).toFixed(2)}`);
+            break;
+        case 3:
+            alert(`O valor do produto com o desconto é igual a ${(valor * 0.70).toFixed(2)}`);
+            break;
+        case 4:
+            alert(`O valor do produto com o desconto é igual a ${(valor * 0.60).toFixed(2)}`);
+            break;
+        case 5:
+            alert(`O valor do produto com o desconto é igual a ${(valor * 0.50).toFixed(2)}`);
+            break;
+        default:
+            alert(`O número da etiqueta ${cor} é inválido`);
+            break;
+    }
+    </script>
+</html>

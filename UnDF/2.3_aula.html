@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Aula 2</title>
+</head>
+<script type = "text/javascript">
+    let valor1 = parseFloat(prompt(
+        "Digite o primeiro valor: "
+    ))
+    let valor2 = parseFloat(prompt(
+        "Digite o segundo valor: "
+    ))
+
+    let op = parseInt(prompt(
+        "Digite o n° da operação que deseja realizar:\n1. Soma(+)\n2. Subtração(-)\n3. Multiplicação(X)\n4. Divisão(/)"
+    ))
+
+    switch (op){
+        case 1:
+            alert(`O valor da operação é igual a ${(valor1 + valor2).toFixed(2)}`);
+            break;
+        case 2:
+            alert(`O valor da operação é igual a ${(valor1 - valor2).toFixed(2)}`);
+            break;
+        case 3:
+            alert(`O valor da operação é igual a ${(valor1 * valor2).toFixed(2)}`);
+            break;
+        case 4:
+            if (valor2 == 0) {
+                alert(`O segundo valor não pode ser igual a 0`);
+                break;
+            else
+                alert(`O valor da operação é igual a ${(valor1 / valor2).toFixed(2)}`);
+                break;
+            }
+
+        default:
+            alert(`O número da operação ${op} é inválido`);
+            break;
+    }
+    </script>
+</html>

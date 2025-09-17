@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Aula 2</title>
+</head>
+<script type = "text/javascript">
+    let prato = parseInt(prompt(
+        "Digite o n° do prato que deseja pedir:\n--**CARDÁPIO**--\n1. Feijoada\n2. Macarronada\n3. Galinha Caipira\n4. Carne de sol"
+    ))
+
+    switch (prato){
+        case 1:
+            alert("O valor do prato é R$25,00");
+            break;
+        case 2:
+            alert("O valor do prato é R$15,00");
+            break;
+        case 3:
+            alert("O valor do prato é R$30,00");
+            break;
+        case 4:
+            alert("O valor do prato é R$30,00");
+            break;
+        default:
+            alert(`O valor ${prato} de entrada inválido`);
+            break;
+    }
+    </script>
+</html>
